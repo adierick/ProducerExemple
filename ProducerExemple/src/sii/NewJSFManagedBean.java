@@ -33,9 +33,9 @@ import javax.servlet.http.HttpServletRequest;
 @RequestScoped
 @ManagedBean
 public class NewJSFManagedBean {
-    @Resource(mappedName = "jms/myQueue")
+    @Resource(mappedName = "myQueue")
     private Queue myQueue;
-    @Resource(mappedName = "jms/myQueueFactory")
+    @Resource(mappedName = "myQueueConnectionFactory")
     private ConnectionFactory myQueueFactory;
     
     private String message;
